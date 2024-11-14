@@ -1,17 +1,17 @@
 import { MdSearch } from "react-icons/md";
-import { useState, useEffect, FormEvent } from "react";
+import { useState,  FormEvent } from "react";
 
 // const searchField = document.getElementById("search");
 export default function Searchbar() {
   const [searchKeyword, setSearchKeyword] = useState("");
   const [warning, setWarning] = useState("");
 
-  interface Event {
-    id: string;
-    name: string;
-    imageUrl: string;
-    url: string;
-  }
+  // interface Event {
+  //   id: string;
+  //   name: string;
+  //   imageUrl: string;
+  //   url: string;
+  // }
   // const [events, setEvents] = useState<Event[]>([]);
   
   const submitSearch = (e: FormEvent<HTMLFormElement>) => {
