@@ -1,33 +1,35 @@
 import { MdSearch } from "react-icons/md";
 import { useState, FormEvent } from "react";
+import {Event} from "../components/Event";
 
-// const searchField = document.getElementById("search");
-export default function Searchbar() {
+interface SearchbarProps {
+  onSearch: (data: Event[]) => void; // Define the callback type | should this be void or null?
+}
+
+export default function Searchbar({ onSearch }: SearchbarProps): JSX.Element {
   const [searchKeyword, setSearchKeyword] = useState("");
   const [warning, setWarning] = useState("");
 
-  // type Event = {
-  //   id: string;
-  //   name: string;
-  //   imageUrl: string;
-  //   url: string;
-  // }
-  // const [events, setEvents] = useState<Event[]>([]);
 
   // emit events maybe
+  // can we just pass the json response (data) back to parent?
+  // yes with a callback functioN (prop that is a function )
 
-  const submitSearch = (e: FormEvent<HTMLFormElement>) => {
+  const submitSearch = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (searchKeyword) {
       console.log(searchKeyword);
-      fetch(
+      await fetch(
         "https://app.ticketmaster.com/discovery/v2/events.json?keyword=" +
           searchKeyword +
           "&countryCode=CH&apikey=UGJxCPf0sNHYRAmC3mVw2puTLYY8Uf9Z",
       )
         .then((response) => response.json())
           .then(( data) => {
-            console.log(data._embedded.events[0].name + data._embedded.events[0].type);
+            console.log(data._embedded.events[0].name + data._embedded?.events[0].type);
+
+            const events:Event[] = data._embedded?.events || []; // if events = empty/Null return empty array
+            onSearch(events);  // Pass the events back to the parent
 
         })
         .catch((error) => {
@@ -61,7 +63,6 @@ export default function Searchbar() {
             type={"text"}
             className={""}
             placeholder={"Search..."}
-            // required={true}
           />
           <button
             className={"px-2 bg-teal-500 shadow-black rounded-lg"}

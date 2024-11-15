@@ -1,0 +1,368 @@
+{
+  "_embedded": {
+    "events": [
+      {
+        "name": "Klangphonics",
+        "type": "event",
+        "id": "Z698xZu3ZaAGa",
+        "test": false,
+        "url": "https://www.ticketmaster.ch/event/klangphonics-tickets/21257?language=en-us",
+        "locale": "en-us",
+        "images": [
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_TABLET_LANDSCAPE_16_9.jpg",
+            "width": 1024,
+            "height": 576,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_RETINA_LANDSCAPE_16_9.jpg",
+            "width": 1136,
+            "height": 639,
+            "fallback": false
+          },
+          {
+            "ratio": "1_1",
+            "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_SOURCE",
+            "width": 4996,
+            "height": 4996,
+            "fallback": false
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_ARTIST_PAGE_3_2.jpg",
+            "width": 305,
+            "height": 203,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+            "width": 2048,
+            "height": 1152,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_RETINA_PORTRAIT_16_9.jpg",
+            "width": 640,
+            "height": 360,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_EVENT_DETAIL_PAGE_16_9.jpg",
+            "width": 205,
+            "height": 115,
+            "fallback": false
+          },
+          {
+            "ratio": "4_3",
+            "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_CUSTOM.jpg",
+            "width": 305,
+            "height": 225,
+            "fallback": false
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_RETINA_PORTRAIT_3_2.jpg",
+            "width": 640,
+            "height": 427,
+            "fallback": false
+          },
+          {
+            "ratio": "3_2",
+            "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_TABLET_LANDSCAPE_3_2.jpg",
+            "width": 1024,
+            "height": 683,
+            "fallback": false
+          },
+          {
+            "ratio": "16_9",
+            "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_RECOMENDATION_16_9.jpg",
+            "width": 100,
+            "height": 56,
+            "fallback": false
+          }
+        ],
+        "sales": {
+          "public": {
+            "startDateTime": "2024-10-16T08:00:00Z",
+            "startTBD": false,
+            "startTBA": false,
+            "endDateTime": "2025-03-19T22:59:00Z"
+          }
+        },
+        "dates": {
+          "access": {
+            "startDateTime": "2025-03-19T19:00:00Z",
+            "startApproximate": false,
+            "endApproximate": false
+          },
+          "start": {
+            "localDate": "2025-03-19",
+            "localTime": "20:00:00",
+            "dateTime": "2025-03-19T19:00:00Z",
+            "dateTBD": false,
+            "dateTBA": false,
+            "timeTBA": false,
+            "noSpecificTime": false
+          },
+          "timezone": "Europe/Zurich",
+          "status": {
+            "code": "onsale"
+          },
+          "spanMultipleDays": false
+        },
+        "classifications": [
+          {
+            "primary": true,
+            "segment": {
+              "id": "KZFzniwnSyZfZ7v7nJ",
+              "name": "Music"
+            },
+            "genre": {
+              "id": "KnvZfZ7vAvF",
+              "name": "Dance/Electronic"
+            },
+            "subGenre": {
+              "id": "KZazBEonSMnZfZ7vA1E",
+              "name": "Dance/Electronic"
+            },
+            "family": false
+          }
+        ],
+        "promoter": {
+          "id": "211",
+          "name": "Mainland Music AG"
+        },
+        "promoters": [
+          {
+            "id": "211",
+            "name": "Mainland Music AG"
+          }
+        ],
+        "seatmap": {
+          "staticUrl": "https://media.ticketmaster.eu/switzerland/7bcd83732dad25a3f8de607fc5e70c95.png",
+          "id": "seatmap"
+        },
+        "ticketing": {
+          "safeTix": {
+            "enabled": false,
+            "inAppOnlyEnabled": false
+          },
+          "id": "ticketing"
+        },
+        "_links": {
+          "self": {
+            "href": "/discovery/v2/events/Z698xZu3ZaAGa?locale=en-us"
+          },
+          "attractions": [
+            {
+              "href": "/discovery/v2/attractions/K8vZ917QVRf?locale=en-us"
+            }
+          ],
+          "venues": [
+            {
+              "href": "/discovery/v2/venues/Z198xZu3Zd71?locale=en-us"
+            }
+          ]
+        },
+        "_embedded": {
+          "venues": [
+            {
+              "type": "venue",
+              "id": "Z198xZu3Zd71",
+              "test": false,
+              "url": "https://www.ticketmaster.ch/venue/komplex-457-zurich-tickets/komplzur/103",
+              "locale": "en-us",
+              "images": [
+                {
+                  "ratio": "16_9",
+                  "url": "https://media.ticketmaster.eu/switzerland/9afb1794058890ee4bf8647de0dc60c4.png",
+                  "width": 205,
+                  "height": 115,
+                  "fallback": false
+                }
+              ],
+              "postalCode": "8048",
+              "timezone": "Europe/Zurich",
+              "city": {
+                "name": "Zürich"
+              },
+              "country": {
+                "name": "Switzerland",
+                "countryCode": "CH"
+              },
+              "address": {
+                "line1": "Hohlstrasse 457"
+              },
+              "location": {
+                "longitude": "8.49989",
+                "latitude": "47.3881"
+              },
+              "upcomingEvents": {
+                "mfx-ch": 28,
+                "_total": 28,
+                "_filtered": 0
+              },
+              "_links": {
+                "self": {
+                  "href": "/discovery/v2/venues/Z198xZu3Zd71?locale=en-us"
+                }
+              }
+            }
+          ],
+          "attractions": [
+            {
+              "name": "Klangphonics",
+              "type": "attraction",
+              "id": "K8vZ917QVRf",
+              "test": false,
+              "url": "https://www.ticketmaster.com/klangphonics-tickets/artist/2944608",
+              "locale": "en-us",
+              "images": [
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                  "width": 2048,
+                  "height": 1152,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_RETINA_PORTRAIT_16_9.jpg",
+                  "width": 640,
+                  "height": 360,
+                  "fallback": false
+                },
+                {
+                  "ratio": "4_3",
+                  "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_CUSTOM.jpg",
+                  "width": 305,
+                  "height": 225,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_RECOMENDATION_16_9.jpg",
+                  "width": 100,
+                  "height": 56,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_TABLET_LANDSCAPE_16_9.jpg",
+                  "width": 1024,
+                  "height": 576,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_RETINA_LANDSCAPE_16_9.jpg",
+                  "width": 1136,
+                  "height": 639,
+                  "fallback": false
+                },
+                {
+                  "ratio": "1_1",
+                  "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_SOURCE",
+                  "width": 4996,
+                  "height": 4996,
+                  "fallback": false
+                },
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_ARTIST_PAGE_3_2.jpg",
+                  "width": 305,
+                  "height": 203,
+                  "fallback": false
+                },
+                {
+                  "ratio": "16_9",
+                  "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_EVENT_DETAIL_PAGE_16_9.jpg",
+                  "width": 205,
+                  "height": 115,
+                  "fallback": false
+                },
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_RETINA_PORTRAIT_3_2.jpg",
+                  "width": 640,
+                  "height": 427,
+                  "fallback": false
+                },
+                {
+                  "ratio": "3_2",
+                  "url": "https://s1.ticketm.net/dam/a/cfd/ae507cb1-9422-44a9-8171-9c99c87facfd_TABLET_LANDSCAPE_3_2.jpg",
+                  "width": 1024,
+                  "height": 683,
+                  "fallback": false
+                }
+              ],
+              "classifications": [
+                {
+                  "primary": true,
+                  "segment": {
+                    "id": "KZFzniwnSyZfZ7v7nJ",
+                    "name": "Music"
+                  },
+                  "genre": {
+                    "id": "KnvZfZ7vAvF",
+                    "name": "Dance/Electronic"
+                  },
+                  "subGenre": {
+                    "id": "KZazBEonSMnZfZ7vAEk",
+                    "name": "Electro-Techno"
+                  },
+                  "type": {
+                    "id": "KZAyXgnZfZ7v7l1",
+                    "name": "Group"
+                  },
+                  "subType": {
+                    "id": "KZFzBErXgnZfZ7vA71",
+                    "name": "Band"
+                  },
+                  "family": false
+                }
+              ],
+              "upcomingEvents": {
+                "mfx-cz": 1,
+                "mfx-at": 1,
+                "mfx-be": 1,
+                "universe": 1,
+                "mfx-ch": 1,
+                "mfx-nl": 1,
+                "ticketmaster": 1,
+                "ticketweb": 2,
+                "mfx-de": 4,
+                "mfx-it": 1,
+                "mfx-pl": 1,
+                "_total": 15,
+                "_filtered": 0
+              },
+              "_links": {
+                "self": {
+                  "href": "/discovery/v2/attractions/K8vZ917QVRf?locale=en-us"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "/discovery/v2/events.json?countryCode=CH&keyword=Klangphonics"
+    }
+  },
+  "page": {
+    "size": 20,
+    "totalElements": 1,
+    "totalPages": 1,
+    "number": 0
+  }
+}
