@@ -1,3 +1,4 @@
+
 type EventCardProps = {picurl: string, eventName: string, eventDescription: string };
 
 export default function EventCard (props: EventCardProps) {

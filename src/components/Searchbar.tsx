@@ -1,53 +1,39 @@
 import { MdSearch } from "react-icons/md";
-import { useState,  FormEvent } from "react";
+import { useState, FormEvent } from "react";
 
 // const searchField = document.getElementById("search");
 export default function Searchbar() {
   const [searchKeyword, setSearchKeyword] = useState("");
   const [warning, setWarning] = useState("");
 
-  // interface Event {
+  // type Event = {
   //   id: string;
   //   name: string;
   //   imageUrl: string;
   //   url: string;
   // }
   // const [events, setEvents] = useState<Event[]>([]);
-  
+
+  // emit events maybe
+
   const submitSearch = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (searchKeyword) {
       console.log(searchKeyword);
-      const response = fetch(
-        "https://app.ticketmaster.com/discovery/v2/events.json?keyword=" + (searchKeyword) + "&countryCode=CH&apikey=UGJxCPf0sNHYRAmC3mVw2puTLYY8Uf9Z",
+      fetch(
+        "https://app.ticketmaster.com/discovery/v2/events.json?keyword=" +
+          searchKeyword +
+          "&countryCode=CH&apikey=UGJxCPf0sNHYRAmC3mVw2puTLYY8Uf9Z",
       )
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(
-              `Network response was not ok: ${response.statusText}`,
-            );
-          }
-          return response.json();
-        })
-        .then((json) => {
-          console.log(json);
-// other things.
-// eventData = json._embedded?.events.=> ({
-// event.id,
-// : event.name,
-// eUrl: event.images.find(),
-//  event.url,
-//
+        .then((response) => response.json())
+          .then(( data) => {
+            console.log(data._embedded.events[0].name + data._embedded.events[0].type);
 
         })
         .catch((error) => {
           console.error("There was an error with the fetch operation:", error);
           // Handle the error.
         });
-
-      console.log(response._embedded.events[0].name);
-      console.log(response._embedded.events[0].name);
-
       setWarning("");
     } else {
       setWarning("Please enter a search term.");
