@@ -15,9 +15,8 @@ import Home from "./sites/Home.tsx";
 function App() {
 
     return (
-        <main>
+        <main className={"flex flex-col min-h-screen"}>
             <Navbar/>
-            <img className={"w-1/2  h-auto"} alt={"some image"} src={"https://s1.ticketm.net/dam/a/a45/2f33ead7-46bf-4ad9-ac56-15686cd23a45_RETINA_PORTRAIT_16_9.jpg"}></img>
             <Router>
                 <Routes>
                     <Route path="/" element={ <Home/> }/>

@@ -19,28 +19,33 @@ export default function Searchbar({ onSearch }: SearchbarProps): JSX.Element {
     e.preventDefault();
     if (searchKeyword) {
       console.log(searchKeyword);
-      await fetch(
-        "https://app.ticketmaster.com/discovery/v2/events.json?keyword=" +
-          searchKeyword +
-          "&countryCode=CH&apikey=UGJxCPf0sNHYRAmC3mVw2puTLYY8Uf9Z",
-      )
-        .then((response) => response.json())
-          .then(( data) => {
-            console.log(data._embedded.events[0].name + data._embedded?.events[0].type);
+      try {
+        const response = await fetch(
+            "https://app.ticketmaster.com/discovery/v2/events.json?keyword=" +
+            searchKeyword +
+            "&countryCode=CH&apikey=UGJxCPf0sNHYRAmC3mVw2puTLYY8Uf9Z"
+        );
+        const data = await response.json();
 
-            const events:Event[] = data._embedded?.events || []; // if events = empty/Null return empty array
-            onSearch(events);  // Pass the events back to the parent
+        if (data._embedded?.events) {
+          const events: Event[] = data._embedded.events;
+          console.log(events[0]?.name);
+          onSearch(events); // Pass the events back to the parent
+        } else {
+          console.log("No events found.");
+          onSearch([]); // Pass an empty array back to the parent
+        }
 
-        })
-        .catch((error) => {
-          console.error("There was an error with the fetch operation:", error);
-          // Handle the error.
-        });
-      setWarning("");
+        setWarning("");
+      } catch (error) {
+        console.error("There was an error with the fetch operation:", error);
+        setWarning("An error occurred while fetching events. Please try again.");
+      }
     } else {
       setWarning("Please enter a search term.");
     }
   };
+
 
   return (
     <div className={"w-full"}>

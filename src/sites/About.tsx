@@ -1,5 +1,5 @@
 export default function About() {
-    return (<div className="justify-items-center m-4 py-20 text-xl">
+    return (<div className="justify-items-center m-4 py-20 text-xl flex-grow">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/>
             </p>

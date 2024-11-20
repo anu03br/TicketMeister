@@ -1,0 +1,5 @@
+To-Do List
+X - when no search has been made yet, don't show no events availabe text
+X - footerbar sticky to bottom of site
+O - currently pictures of event cards load slowly, only render eventcard once picture has been loaded
+O - add dark mode color swap
