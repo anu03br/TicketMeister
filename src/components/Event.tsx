@@ -6,10 +6,13 @@ export type Event = {
   dates: { start: { localDate: string; localTime: string } };
   _embedded: {
     venues: {
+      name: string;
       url: string; // URL of the venue
       type: string;
       id: string;
-    }[]; // Venues array is directly under _embedded
+      city: {
+        name: string; // City is an object with a name property
+      };
+    }[];
   };
 };
-

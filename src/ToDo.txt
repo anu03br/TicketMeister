@@ -1,5 +1,19 @@
 To-Do List
+style:
+O - define color scheme (primary, secondary)
+O - Navbar title not centered on Desktop mode (should be above searchbar input)
+O - Add links for Ticketmaster booking to event cards
+O - redesign searchbar to be more like Ticketmaster.us
+fix:
 X - when no search has been made yet, don't show no events availabe text
 X - footerbar sticky to bottom of site
 O - currently pictures of event cards load slowly, only render eventcard once picture has been loaded
 O - add dark mode color swap
+X - specify kilometer for range in API GET
+feat:
+O - get current location (popup allow data access)
+X - add option to list events in range (something like q-select)
+0 - display queried picture according to width and height instead of [0]
+
+
+maybe use list with berlin= latlong + &radius=100&unit=km for radial search

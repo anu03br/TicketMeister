@@ -2,7 +2,6 @@ import Searchbar from "../components/Searchbar.tsx";
 import Titlebar from "../components/Titlebar.tsx";
 import EventCard from "../components/EventCard.tsx";
 import { Event } from "../components/Event";
-import SplitURL from "../components/SplitURL.tsx";
 import { useState } from "react";
 
 export default function Home() {
@@ -29,7 +28,11 @@ export default function Home() {
               picurl={event.images[0]?.url || "https://via.placeholder.com/150"}
               eventName={event.name || "No event name available"}
               eventDescription={
-                SplitURL(event._embedded.venues[0]?.url) || "No venue available"
+                  event._embedded?.venues?.[0]
+                      ? event._embedded.venues[0].name
+                          ? `${event._embedded.venues[0].name}, ${event._embedded.venues[0].city?.name || "Unknown City"}`
+                          : event._embedded.venues[0].city?.name || "Unknown City"
+                      : "No venue available"
               }
             />
           ))}
