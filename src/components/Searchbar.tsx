@@ -51,81 +51,85 @@ export default function Searchbar({ onSearch }: SearchbarProps): JSX.Element {
   };
 
   return (
-    <div className={"w-full"}>
-      <form
-        onSubmit={submitSearch}
-        className="flex flex-col items-center py-4 border-t border-b-2 border-black"
-      >
-        <div className="flex">
-          <div>
-            <div
-              className={
-                "flex items-center w-min px-4 py-2 border-2 border-solid border-black rounded-2xl"
-              }
-            >
-              <label htmlFor={"hidden search"}></label>
-              <MdSearch
-                size="20"
-                className={"flex justify-center align-bottom"}
-              />
-              <input
-                onChange={(event) => {
-                  setSearchKeyword(event.target.value);
-                }}
-                id={"search"}
-                type={"text"}
-                className={""}
-                placeholder={"Search..."}
-              />
+    <div className={"wrapper py-4 pt-6 shadow-sm"}>
+      <form onSubmit={submitSearch} className={"justify-items-center"}>
+        <div className={"formContent  lg:flex lg:justify-around"}>
+          <div className={"formLeft flex"}>
+            <div className={"searchbox"}>
+              <div
+                  className={
+                    "flex items-center w-min px-4 py-2 border-2 border-solid border-black rounded-2xl"
+                  }
+              >
+                <label htmlFor={"hidden search"}></label>
+                <MdSearch
+                    size="20"
+                    className={"flex justify-center align-bottom"}
+                />
+                <input
+                    onChange={(event) => {
+                      setSearchKeyword(event.target.value);
+                    }}
+                    id={"search"}
+                    type={"text"}
+                    className={""}
+                    placeholder={"Search..."}
+                />
+              </div>
+              {warning && (
+                  <p className={"min-h-6 pl-10"} style={{color: "red"}}>
+                    {warning}
+                  </p>
+              )}
             </div>
-            <div className={"min-h-6 pl-10"}>
-              {warning && <p style={{ color: "red" }}>{warning}</p>}
+            <div className={"location px-2 pl-8 pt-3"}>
+              <label htmlFor="city" className={" hidden w-fit h-fit"}>
+                Choose Location
+              </label>
+              <select
+                  onChange={(event) => {
+                    setSearchLocation(event.target.value);
+                  }}
+                  name="city"
+                  id="city"
+                  className={
+                    " px-3 mx-2 h-8 min-w-40  text-md font-medium border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  }
+              >
+                <option value="">Choose Location</option>
+                <option value="47.3769,8.5417">Zürich</option>
+                <option value="47.4245,9.3767">St. Gallen</option>
+                <option value="46.9481,7.4474">Bern</option>
+                <option value="52.5200,13.4050">Berlin</option>
+                <option value="48.1351,11.5820">München</option>
+                <option value="48.2082,16.3738">Wien</option>
+                <option value="52.3676,4.9041">Amsterdam</option>
+              </select>
             </div>
           </div>
-          <div className={"px-6 pt-2"}>
-            <label htmlFor="city" className={" hidden w-fit h-fit"}>
-              Choose Location
-            </label>
-            <select
-              onChange={(event) => {
-                setSearchLocation(event.target.value);
-              }}
-              name="city"
-              id="city"
-              className={
-                " px-3 mx-2 h-8 min-w-40  text-md font-medium border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-              }
-            >
-              <option value="">Choose Location</option>
-              <option value="47.3769,8.5417">Zürich</option>
-              <option value="47.4245,9.3767">St. Gallen</option>
-              <option value="46.9481,7.4474">Bern</option>
-              <option value="52.5200,13.4050">Berlin</option>
-              <option value="48.1351,11.5820">München</option>
-              <option value="48.2082,16.3738">Wien</option>
-              <option value="52.3676,4.9041">Amsterdam</option>
-            </select>
+
+          <div className={"formRight pt-4"}>
             <label
-              htmlFor="radius"
-              className="mb-2 px-4 text-md font-medium text-gray-700"
+                htmlFor="radius"
+                className="mb-2 pr-4 text-md font-medium text-gray-700"
             >
               Range: {searchRadius} km
             </label>
             <input
-              id="radius"
-              type="range"
-              min="0"
-              max="1000"
-              step="200"
-              value={searchRadius}
-              onChange={(event) => {
-                setSearchRadius(event.target.value);
-              }}
-              className=" h-2 min-w-60 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                id="radius"
+                type="range"
+                min="0"
+                max="1000"
+                step="200"
+                value={searchRadius}
+                onChange={(event) => {
+                  setSearchRadius(event.target.value);
+                }}
+                className=" h-2 min-w-60 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
             />
             <button
-              className={"px-2 bg-teal-500 shadow-black rounded-lg"}
-              type={"submit"}
+                className={"font-roboto px-4 py-1 mx-4 bg-teal-500 shadow-gray-600 shadow-md rounded-lg"}
+                type={"submit"}
             >
               Search
             </button>

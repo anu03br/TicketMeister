@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+module.exports = {
+    content: ['./src/**/*.{js,jsx,ts,tsx}'], // Adjust paths as needed
+    theme: {
+        extend: {
+            fontFamily: {
+                roboto: ['Roboto', 'sans-serif'], // Add Roboto font
+                funnel: ['"Funnel Display"', 'sans-serif'],
+            },
+        },
+    },
+    plugins: [],
+};
 

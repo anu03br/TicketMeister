@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className={"flex-grow"}>
       <Searchbar onSearch={handleSearchResults} />
-      <Titlebar text="Our Events" />
+      <Titlebar text="Find events near you" />
       <div className="">
         {searchExecuted && events.length === 0 && (
           <p className={"text-xl justify-self-center"}>No events found</p>
