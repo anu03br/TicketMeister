@@ -10,7 +10,7 @@ export default function Navbar() {
     };
     return (
         <div className={"navWrapper shadow-md"}>
-            <nav className="flex items-center bg-teal-500 p-6 justify-between">
+            <nav className="flex items-center bg-primary p-6 justify-between">
                 <a onClick={toggleMenu} className="flex-shrink-0 lg:hidden">
                     <img className="scale-25 transform" src={hamburgerIcon} alt="hamburger"/>
                 </a>
@@ -19,10 +19,10 @@ export default function Navbar() {
                 </div>
                 <div className="flex items-center justify-end">
                     <ul className="hidden lg:flex list-none">
-                        <li><a href={"/"} className={"font-funnel hover:bg-teal-400 rounded-md text-xl p-4"}>Home</a></li>
-                        <li><a href={"/about"} className={"font-funnel hover:bg-teal-400 rounded-md text-xl p-4"}>About</a></li>
-                        <li><a href={"#"} className={"font-funnel hover:bg-teal-400 rounded-md text-xl p-4"}>Events</a></li>
-                        <li><a href={"#"} className={"font-funnel hover:bg-teal-400 rounded-md text-xl p-4"}>Contact</a></li>
+                        <li><a href={"/"} className={"font-funnel hover:bg-neutral rounded-md text-xl p-4"}>Home</a></li>
+                        <li><a href={"/about"} className={"font-funnel hover:bg-secondary rounded-md text-xl p-4"}>About</a></li>
+                        <li><a href={"#"} className={"font-funnel hover:bg-secondary rounded-md text-xl p-4"}>Events</a></li>
+                        <li><a href={"#"} className={"font-funnel hover:bg-secondary rounded-md text-xl p-4"}>Contact</a></li>
                     </ul>
                 </div>
             </nav>

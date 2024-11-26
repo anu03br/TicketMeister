@@ -125,10 +125,10 @@ export default function Searchbar({ onSearch }: SearchbarProps): JSX.Element {
                 onChange={(event) => {
                   setSearchRadius(event.target.value);
                 }}
-                className=" h-2 min-w-60 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                className=" h-2 min-w-60 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-secondary"
             />
             <button
-                className={"font-roboto px-4 py-1 mx-4 bg-teal-500 shadow-gray-600 shadow-md rounded-lg"}
+                className={"font-roboto px-4 py-1 mx-4 bg-primary shadow-gray-600 shadow-md rounded-lg"}
                 type={"submit"}
             >
               Search
