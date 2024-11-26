@@ -27,6 +27,7 @@ export default function Home() {
               key={index} // Ensure a unique key for each element
               picurl={event.images[0]?.url || "https://via.placeholder.com/150"}
               eventName={event.name || "No event name available"}
+              bookingUrl={event.url}
               eventDescription={
                   event._embedded?.venues?.[0]
                       ? event._embedded.venues[0].name

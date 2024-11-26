@@ -1,7 +1,7 @@
 export type Event = {
   name: string;
   id: number;
-  url: string;
+  url: string; //booking URL
   images: { url: string; width: number; height: number }[];
   dates: { start: { localDate: string; localTime: string } };
   _embedded: {
