@@ -11,8 +11,8 @@ O - currently pictures of event cards load slowly, only render eventcard once pi
 O - add dark mode color swap
 X - specify kilometer for range in API GET
 O - mobile ul should be closed when switching from mobile to desktop view
-O - censor API key for public repo (pip install git-filter-repo)
-    https://www.linkedin.com/pulse/how-resolve-generic-high-entropy-secret-warnings-nwafor-glory-ebube-ftfee#:~:text=Receiving%20a%20%22Generic%20High%20Entropy,remains%20in%20your%20commit%20history.
+X - move API Key to .env variable
+
 feat:
 O - get current location (popup allow data access)
 X - add option to list events in range (something like q-select)

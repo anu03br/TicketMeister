@@ -1,12 +1,14 @@
 import { MdSearch } from "react-icons/md";
-import { useState, FormEvent } from "react";
+import  { useState, FormEvent } from "react";
 import { Event } from "./Event.tsx";
+
 
 interface SearchbarProps {
   onSearch: (data: Event[]) => void; // Define the callback type | should this be void or null?
 }
 
 export default function Searchbar({ onSearch }: SearchbarProps): JSX.Element {
+  const apiKey = import.meta.env.VITE_API_KEY;
   const [searchKeyword, setSearchKeyword] = useState("");
   const [searchLocation, setSearchLocation] = useState("");
   const [searchRadius, setSearchRadius] = useState("10");
@@ -25,7 +27,7 @@ export default function Searchbar({ onSearch }: SearchbarProps): JSX.Element {
             "&radius=" +
             searchRadius +
             "&unit=km" +
-            "&apikey=UGJxCPf0sNHYRAmC3mVw2puTLYY8Uf9Z",
+            "&apikey=" + apiKey,
         );
         const data = await response.json();
 

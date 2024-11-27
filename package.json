@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "tail": "npx tailwindcss -i ./src/app.css -o ./src/tailwind.css --watch",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
+    "@types/node": "^22.10.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
@@ -25,6 +27,7 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.12.0",
+    "node": "^20.18.1",
     "postcss": "^8.4.49",
     "prettier": "3.3.3",
     "tailwindcss": "^3.4.15",

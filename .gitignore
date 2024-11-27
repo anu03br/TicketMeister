@@ -1,3 +1,6 @@
+# env file for storing sensitive information
+.env
+
 # Logs
 logs
 *.log
